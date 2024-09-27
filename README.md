@@ -15,7 +15,7 @@ KnobGen, a dual-pathway framework that democratizes sketch-based image generatio
 - [2024-09-27] 🔥 Initial release of KnobGen code!
 
 # Installation
-To set up the environment and start using KnobGen, follow these steps:
+To set up the environment and start using KnobGen, please follow these steps:
 
 
 1. `conda env create -f environment.yml`
