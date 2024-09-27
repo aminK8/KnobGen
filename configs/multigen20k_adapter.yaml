@@ -1,0 +1,104 @@
+dataset: 
+  train:
+    target: conffusion.data.MultiGen20M
+    params:
+      path_json: "/fs/scratch/PAS2821/amin/MultiGen-20K/json_files/aesthetics_plus_all_group_{}_all.json"
+      path_meta: "/fs/scratch/PAS2821/amin/MultiGen-20K"
+      resolution: 512
+      none_loop: 0
+      p_drop_text: 0.1
+      p_drop_condition: 0.0
+      conditions: ['hed']
+      # 'depth', 'openpose', 'bbox', 'canny', 'hedsketch']
+      prompt_json: /fs/scratch/PAS2821/amin/MultiGen-20K/json_files/llava_prompts.json
+      hints:
+        - task: 'hed'
+          path: '/fs/scratch/PAS2821/amin/MultiGen-20K/conditions/'
+        # - task: 'depth'
+        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+        # - task: 'openpose'
+        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+        # - task: 'bbox'
+        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+        # - task: 'canny'
+        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+        # - task: 'hedsketch'
+        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+  validation:
+      num_inference_steps: 50
+      guidance_scale: 8.
+      target: conffusion.data.MultiGen20M
+      params:
+        path_json: "small_dataset/json_files/aesthetics_plus_all_group_{}_all.json"
+        path_meta: "small_dataset"
+        resolution: 512
+        none_loop: 0
+        p_drop_text: 0.0
+        p_drop_condition: 0.00
+        conditions: ['hed']
+        prompt_json: ''
+        hints:
+          - task: 'hed'
+            path: 'small_dataset/conditions/'
+          # - task: 'depth'
+          #   path: 'small_dataset/conditions/'
+          # - task: 'openpose'
+          #   path: 'small_dataset/conditions/'
+          # - task: 'bbox'
+          #   path: 'small_dataset/conditions/'
+          # - task: 'canny'
+          #   path: 'small_dataset/conditions/'
+          # - task: 'hedsketch'
+          #   path: 'small_dataset/conditions/' 
+  test:
+model:
+  target: conffusion.models.VisionAdapterTransformer2
+  params:
+    in_channels_image: 1024
+    in_channels_text: 768
+    max_position_embeddings_text: 77
+    hidden_channels: 1024
+    output_channels: 768
+    number_heads: 8
+    num_transformer_layers: 6
+    num_image_token: 256
+train:
+  random_contion: True
+  pretrained_model_path: 'ddpm_models'
+  pretrained_image_encoder: 'openai/clip-vit-large-patch14'
+  pretrained_adapter_sketch: 'TencentARC/t2iadapter_sketch_sd15v2' # it is not depth it is sketch !!!
+  checkpoint_path: '/users/PAS0536/aminr8/Conffusion/output/multigen20k_1_fix_adapter_1_osc-2024-09-18T06-04-04/checkpoints/checkpoint-epoch-2000.ckpt'
+  is_debug: False
+  global_seed: 42
+  output_dir: 'output'
+  num_workers: 16
+  train_batch_size: 32
+  valid_batch_size: 1
+  noise_scheduler_kwargs: 
+    num_train_timesteps: 1000
+    beta_start:          0.00085
+    beta_end:            0.012
+    beta_schedule:       "linear"
+    steps_offset:        1
+    clip_sample:         false
+  max_train_epoch: 2000
+  max_train_steps: -1
+  scale_lr: False
+  checkpointing_epochs: 20
+  checkpointing_steps: -1
+  validation_steps: 1000
+  validation_steps_tuple: [1, 50, 100, 400, 750]
+  gradient_checkpointing: False
+  mixed_precision_training: False
+  max_grad_norm: 1
+  # todo this should be true for not debug
+  enable_xformers_memory_efficient_attention: False
+optimize:
+  learning_rate: 1e-5
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 1e-2
+  adam_epsilon: 1e-08
+  lr_warmup_steps: 500
+  lr_scheduler: "constant"
+  gradient_accumulation_steps: 1
