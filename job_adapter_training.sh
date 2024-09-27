@@ -13,4 +13,4 @@
 conda activate knobgen
 
 echo "Starting accelerate..."
-srun python3 train_adapter.py --config configs/multigen20k_adapter.yaml --launcher slurm 
+srun python3 train_adapter.py --config configs/adapter.yaml --launcher slurm 

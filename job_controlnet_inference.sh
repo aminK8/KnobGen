@@ -12,4 +12,4 @@
 conda activate knobgen
 
 echo "Starting accelerate..."
-srun python3 inference_controlnet.py --config configs/multigen20k_controlnet.yamll --launcher slurm 
+srun python3 inference_controlnet.py --config configs/controlnet.yamll --launcher slurm 

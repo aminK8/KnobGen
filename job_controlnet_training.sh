@@ -13,4 +13,4 @@
 conda activate knobgen
 
 echo "Starting accelerate..."
-srun python3 train_controlnet.py --config configs/multigen20k_controlnet.yaml --launcher slurm 
+srun python3 train_controlnet.py --config configs/controlnet.yaml --launcher slurm 
