@@ -20,3 +20,18 @@ To set up the environment and start using KnobGen, follow these steps:
 
 1. `conda env create -f environment.yml`
 2. `conda activate knobgen`
+
+# Results
+
+ Our method democratizes sketch-based image generation by effectively handling a broad spectrum of sketch complexity and user drawing ability—from novice sketches to those made by seasoned artists—while maintaining the natural appearance of the image.
+
+![KnobGen Result](misc/knob_gen_fancy.png)
+
+### KnobGen vs. baseline on novice sketches
+
+![KnobGen VS Baselines](misc/knobgen_results_weakness.png)
+
+
+### Impact of the knob mechanism across varying sketch complexities
+
+![KnobGen Spectrum](misc/knob_spectrum.png)
