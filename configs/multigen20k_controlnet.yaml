@@ -2,17 +2,17 @@ dataset:
   train:
     target: conffusion.data.MultiGen20M
     params:
-      path_json: "../MultiGen-20K/MultiGen-20K/json_files/aesthetics_plus_all_group_{}_all.json"
-      path_meta: "../MultiGen-20K/MultiGen-20K"
+      path_json: "MultiGen-20K/MultiGen-20K/json_files/aesthetics_plus_all_group_{}_all.json"
+      path_meta: "MultiGen-20K/MultiGen-20K"
       resolution: 512
       none_loop: 0
       p_drop_text: 0.3
       p_drop_condition: 0.0
       conditions: ['hed']
-      prompt_json: /home/karimimonsefi.1/datasets/MultiGen-20K/json_files/llava_prompts.json
+      prompt_json: MultiGen-20K/json_files/llava_prompts.json
       hints:
         - task: 'hed'
-          path: '../MultiGen-20K/MultiGen-20K/conditions/'
+          path: 'MultiGen-20K/MultiGen-20K/conditions/'
   validation:
       num_inference_steps: 50
       guidance_scale: 8.
@@ -46,7 +46,7 @@ train:
   pretrained_model_path: 'ddpm_models'
   pretrained_image_encoder: 'openai/clip-vit-large-patch14'
   pretrained_controlnet_sketch: 'lllyasviel/sd-controlnet-scribble'
-  checkpoint_path: '/fs/scratch/PAS2821/pouyan/for_amin/multigen20k_1_fix_controlnet_osc-2024-09-17T22-14-04/checkpoints/checkpoint-epoch-2000.ckpt'
+  checkpoint_path: ''
   is_debug: False
   global_seed: 42
   output_dir: 'output'

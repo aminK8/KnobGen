@@ -2,28 +2,17 @@ dataset:
   train:
     target: conffusion.data.MultiGen20M
     params:
-      path_json: "/fs/scratch/PAS2821/amin/MultiGen-20K/json_files/aesthetics_plus_all_group_{}_all.json"
-      path_meta: "/fs/scratch/PAS2821/amin/MultiGen-20K"
+      path_json: "MultiGen-20K/json_files/aesthetics_plus_all_group_{}_all.json"
+      path_meta: "MultiGen-20K"
       resolution: 512
       none_loop: 0
       p_drop_text: 0.1
       p_drop_condition: 0.0
       conditions: ['hed']
-      # 'depth', 'openpose', 'bbox', 'canny', 'hedsketch']
-      prompt_json: /fs/scratch/PAS2821/amin/MultiGen-20K/json_files/llava_prompts.json
+      prompt_json: MultiGen-20K/json_files/llava_prompts.json
       hints:
         - task: 'hed'
-          path: '/fs/scratch/PAS2821/amin/MultiGen-20K/conditions/'
-        # - task: 'depth'
-        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
-        # - task: 'openpose'
-        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
-        # - task: 'bbox'
-        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
-        # - task: 'canny'
-        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
-        # - task: 'hedsketch'
-        #   path: '../MultiGen-20K/MultiGen-20K/conditions/'
+          path: 'MultiGen-20K/conditions/'
   validation:
       num_inference_steps: 50
       guidance_scale: 8.
@@ -40,16 +29,6 @@ dataset:
         hints:
           - task: 'hed'
             path: 'small_dataset/conditions/'
-          # - task: 'depth'
-          #   path: 'small_dataset/conditions/'
-          # - task: 'openpose'
-          #   path: 'small_dataset/conditions/'
-          # - task: 'bbox'
-          #   path: 'small_dataset/conditions/'
-          # - task: 'canny'
-          #   path: 'small_dataset/conditions/'
-          # - task: 'hedsketch'
-          #   path: 'small_dataset/conditions/' 
   test:
 model:
   target: conffusion.models.VisionAdapterTransformer2
@@ -66,8 +45,8 @@ train:
   random_contion: True
   pretrained_model_path: 'ddpm_models'
   pretrained_image_encoder: 'openai/clip-vit-large-patch14'
-  pretrained_adapter_sketch: 'TencentARC/t2iadapter_sketch_sd15v2' # it is not depth it is sketch !!!
-  checkpoint_path: '/users/PAS0536/aminr8/Conffusion/output/multigen20k_1_fix_adapter_1_osc-2024-09-18T06-04-04/checkpoints/checkpoint-epoch-2000.ckpt'
+  pretrained_adapter_sketch: 'TencentARC/t2iadapter_sketch_sd15v2'
+  checkpoint_path: ''
   is_debug: False
   global_seed: 42
   output_dir: 'output'
@@ -91,7 +70,6 @@ train:
   gradient_checkpointing: False
   mixed_precision_training: False
   max_grad_norm: 1
-  # todo this should be true for not debug
   enable_xformers_memory_efficient_attention: False
 optimize:
   learning_rate: 1e-5
