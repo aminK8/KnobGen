@@ -5,7 +5,7 @@ KnobGen for Condition Diffusion Tasks ([Pouyan Navard*](https://www.linkedin.com
 \* These authors contributed equally to this work. 
 
 
-KnobGen, a dual-pathway framework that democratizes sketch-based image generation by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen uses a Coarse-Grained Controller (CGC) module for high-level semantics in the early stages of generation and a Fine-Grained Controller (FGC) module for detailed refinement later in the process.
+KnobGen, a dual-pathway framework that democratizes sketch-based image generation by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen employs a Coarse-Grained Controller (CGC) module for leveraging high-level semantics from both textual and sketch inputs in the early stages of generation, and a Fine-Grained Controller (FGC) module for detailed refinement later in the process.
 
 
 ![KnobGen Architecture](misc/KnobGen.png)
