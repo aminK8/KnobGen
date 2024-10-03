@@ -2,10 +2,9 @@
 
 KnobGen for Condition Diffusion Tasks ([Pouyan Navard*](https://www.linkedin.com/in/pouyan-boreshnavard/), [Amin Karimi Monsefi*](https://7amin.github.io/), [Mengxi Zhou](https://www.linkedin.com/in/mengxi-zhou-23a10b289/), [Wei-Lun (Harry) Chao](https://sites.google.com/view/wei-lun-harry-chao/home), [Alper Yilmaz](https://ceg.osu.edu/people/yilmaz.15), [Rajiv Ramnath](https://cse.osu.edu/people/ramnath.6))
 
-Paper Link: [KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models](https://arxiv.org/abs/2410.01595)
-
 \* These authors contributed equally to this work. 
 
+Paper Link: [KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models](https://arxiv.org/abs/2410.01595)
 
 KnobGen, a dual-pathway framework that democratizes sketch-based image generation by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen employs a Coarse-Grained Controller (CGC) module for leveraging high-level semantics from both textual and sketch inputs in the early stages of generation, and a Fine-Grained Controller (FGC) module for detailed refinement later in the process.
 
