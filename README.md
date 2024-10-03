@@ -2,6 +2,8 @@
 
 KnobGen for Condition Diffusion Tasks ([Pouyan Navard*](https://www.linkedin.com/in/pouyan-boreshnavard/), [Amin Karimi Monsefi*](https://7amin.github.io/), [Mengxi Zhou](https://www.linkedin.com/in/mengxi-zhou-23a10b289/), [Wei-Lun (Harry) Chao](https://sites.google.com/view/wei-lun-harry-chao/home), [Alper Yilmaz](https://ceg.osu.edu/people/yilmaz.15), [Rajiv Ramnath](https://cse.osu.edu/people/ramnath.6))
 
+[KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models](https://arxiv.org/abs/2410.01595)
+
 \* These authors contributed equally to this work. 
 
 
@@ -13,6 +15,7 @@ KnobGen, a dual-pathway framework that democratizes sketch-based image generatio
 # News
 
 - [2024-09-27] 🔥 Initial release of KnobGen code!
+- [2024-10-02] 🔥 The paper is released on arXiv.
 
 # Installation
 To set up the environment and start using KnobGen, please follow these steps:
