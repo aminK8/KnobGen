@@ -7,6 +7,8 @@ Paper Link: [KnobGen: Controlling the Sophistication of Artwork in Sketch-Based 
 
 ![KnobGen Architecture](misc/HEDFusion.jpg)
 
+## Quick Demo
+
 ## :rocket: News
 - [2024-09-27] 🔥 Initial release of KnobGen code!
 - [2024-10-02] 🔥 The paper is released on arXiv.
