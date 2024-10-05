@@ -47,11 +47,11 @@ To run inference follow thes steps:
     <tr>
       <td align="center">
         <img src="./misc/combined.gif" alt="Process Demonstration" width="128"><br>
-        <b>Figure 1:</b> More qualitative results 
+        More qualitative results 
       </td>
       <td align="center">
         <img src="./misc/knobgen_results_weakness.png" alt="Static Image" width="784"><br>
-        <b>Figure 2:</b> Comparison With Baseline
+        Comparison With Baseline
       </td>
     </tr>
   </table>
