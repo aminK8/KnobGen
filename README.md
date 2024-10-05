@@ -31,7 +31,7 @@ conda activate knobgen
 ```
 
 ## Prepare the Dataset
-
+To setup the dataset follow these steps:
 ## Train
 To train the model follow thes steps:
 
