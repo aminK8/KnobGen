@@ -44,10 +44,10 @@ conda activate knobgen
   <table>
     <tr>
       <td>
-        <img src="./misc/combined.gif" alt="GIF" width="400">
+        <img src="./misc/combined.gif" alt="GIF" width="256">
       </td>
       <td>
-        <img src="./misc/knobgen_results_weakness.png" alt="baseline" width="400">
+        <img src="./misc/knobgen_results_weakness.png" alt="baseline" width="500">
       </td>
     </tr>
   </table>
