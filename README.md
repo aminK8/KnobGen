@@ -51,7 +51,7 @@ To run inference follow thes steps:
       </td>
       <td align="center">
         <img src="./misc/knobgen_results_weakness.png" alt="Static Image" width="784"><br>
-        </b>Comparison With Baseline</b> 
+        <b>Comparison With Baseline</b> 
       </td>
     </tr>
   </table>
@@ -59,5 +59,5 @@ To run inference follow thes steps:
 
 <p align="center">
   <img src="misc/knob_spectrum.png" alt="KnobGen Spectrum" width="784"><br>
-  <em> The effect of our <b>Knob</em> mechanism
+  <em> The effect of our <b>Knob</b> mechanism
 </p>
