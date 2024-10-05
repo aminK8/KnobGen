@@ -47,7 +47,7 @@ conda activate knobgen
         <img src="./misc/knob_gen_fancy.png" alt="Wide Image" width="500">
       </td>
       <td>
-        <img src="./misc/knobgen_results_weakness.png" alt="Narrow Image" width="250">
+        <img src="./misc/knobgen_results_weakness.png" alt="Narrow Image" width="500">
       </td>
     </tr>
   </table>
