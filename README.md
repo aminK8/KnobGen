@@ -43,15 +43,18 @@ conda activate knobgen
 <p align="center">
   <table>
     <tr>
-      <td>
-        <img src="./misc/combined.gif" alt="GIF" width="128">
+      <td align="center">
+        <img src="./misc/combined.gif" alt="Process Demonstration" width="128"><br>
+        <b>Figure 1:</b> More qualitative results 
       </td>
-      <td>
-        <img src="./misc/knobgen_results_weakness.png" alt="baseline" width="784">
+      <td align="center">
+        <img src="./misc/knobgen_results_weakness.png" alt="Static Image" width="784"><br>
+        <b>Figure 2:</b> Comparison With Baseline
       </td>
     </tr>
   </table>
 </p>
+
 
 
 ### Impact of the knob mechanism across varying sketch complexities
