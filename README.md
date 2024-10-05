@@ -16,8 +16,10 @@ Paper Link: [KnobGen: Controlling the Sophistication of Artwork in Sketch-Based 
 ## Table of Contents
 Follow steps 1-3 to run our pipeline. 
 1. [Installation](#Installation)
-2. Train
-3. Evaluation
+2. [Prepare the Dataset](#Prepare-the-Dataset)
+3. [Train](#Train)
+4. [Inference](#inference)
+5. [Results](#Results)
 
 ## Installation
 To set up the environment, please follow these steps in the terminal:
@@ -28,7 +30,12 @@ conda env create -f environment.yml
 conda activate knobgen
 ```
 
-Prepare the Dataset
+## Prepare the Dataset
+
+## Train
+
+## Inference
+
 ## Results
 
  Our method democratizes sketch-based image generation by effectively handling a broad spectrum of sketch complexity and user drawing ability—from novice sketches to those made by seasoned artists—while maintaining the natural appearance of the image.
