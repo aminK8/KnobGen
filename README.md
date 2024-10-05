@@ -6,7 +6,7 @@ KnobGen is a dual-pathway framework that empowers sketch-based image generation 
 ![KnobGen Architecture](misc/HEDFusion.jpg)
 
 ## Quick Demo
-
+![KnobGen Architecture](misc/quick_demo.PNG)
 ## :rocket: News
 - [2024-09-27] 🔥 Initial release of KnobGen code!
 - [2024-10-02] 🔥 The paper is released on arXiv.
