@@ -40,19 +40,8 @@ conda activate knobgen
 
  Our method democratizes sketch-based image generation by effectively handling a broad spectrum of sketch complexity and user drawing ability—from novice sketches to those made by seasoned artists—while maintaining the natural appearance of the image.
 
-<p align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="./misc/knob_gen_fancy.png" alt="Wide Image" width="500">
-      </td>
-      <td>
-        <img src="./misc/knobgen_results_weakness.png" alt="Narrow Image" width="500">
-      </td>
-    </tr>
-  </table>
-</p>
-
+![vs_baselines]("./misc/combined.gif")
+![vs_baselines]("./misc/knobgen_results_weakness.png")
 
 ### Impact of the knob mechanism across varying sketch complexities
 
