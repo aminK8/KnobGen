@@ -23,11 +23,12 @@ Follow steps 1-3 to run our pipeline.
 
 # Installation
 To set up the environment, please follow these steps in the terminal:
-1. `git clone https://github.com/aminK8/KnobGen.git`
-2. `cd KnobGen`
-3. `conda env create -f environment.yml`
-4. `conda activate knobgen`
-
+```shell
+git clone https://github.com/aminK8/KnobGen.git
+cd KnobGen
+conda env create -f environment.yml
+conda activate knobgen
+```
 # Results
 
  Our method democratizes sketch-based image generation by effectively handling a broad spectrum of sketch complexity and user drawing ability—from novice sketches to those made by seasoned artists—while maintaining the natural appearance of the image.
