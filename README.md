@@ -23,8 +23,8 @@ Follow steps 1-3 to run our pipeline.
 
 # Installation
 To set up the environment, please follow these steps in the terminal:
-1. `git clone https://github.com/aminK8/KnobGen.git'
-2. 'cd KnobGen'
+1. `git clone https://github.com/aminK8/KnobGen.git`
+2. `cd KnobGen`
 3. `conda env create -f environment.yml`
 4. `conda activate knobgen`
 
