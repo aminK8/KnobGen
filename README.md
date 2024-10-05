@@ -33,8 +33,10 @@ conda activate knobgen
 ## Prepare the Dataset
 
 ## Train
+To train the model follow thes steps:
 
 ## Inference
+To run inference follow thes steps:
 
 ## Results
 
@@ -55,8 +57,6 @@ conda activate knobgen
   </table>
 </p>
 
-
-
-### Impact of the knob mechanism across varying sketch complexities
+### Our proposed Knob mechanism
 
 ![KnobGen Spectrum](misc/knob_spectrum.png)
