@@ -1,13 +1,9 @@
-# KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models
+# KnobGen
+## Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models
 
-This repository is the official implementation of KnobGen. ([Pouyan Navard*](https://www.linkedin.com/in/pouyan-boreshnavard/), [Amin Karimi Monsefi*](https://7amin.github.io/), [Mengxi Zhou](https://www.linkedin.com/in/mengxi-zhou-23a10b289/), [Wei-Lun (Harry) Chao](https://sites.google.com/view/wei-lun-harry-chao/home), [Alper Yilmaz](https://ceg.osu.edu/people/yilmaz.15), [Rajiv Ramnath](https://cse.osu.edu/people/ramnath.6))
-
-\* These authors contributed equally to this work. 
+KnobGen is a dual-pathway framework that empowers sketch-based image generation diffusion model by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen employs a Coarse-Grained Controller (CGC) module for leveraging high-level semantics from both textual and sketch inputs in the early stages of generation, and a Fine-Grained Controller (FGC) module for detailed refinement later in the process.
 
 Paper Link: [KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models](https://arxiv.org/abs/2410.01595)
-
-KnobGen, a dual-pathway framework that democratizes sketch-based image generation by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen employs a Coarse-Grained Controller (CGC) module for leveraging high-level semantics from both textual and sketch inputs in the early stages of generation, and a Fine-Grained Controller (FGC) module for detailed refinement later in the process.
-
 
 ![KnobGen Architecture](misc/HEDFusion.jpg)
 
@@ -21,7 +17,7 @@ Follow steps 1-3 to run our pipeline.
 2. Train
 3. Evaluation
 
-# Installation
+## Installation
 To set up the environment, please follow these steps in the terminal:
 ```shell
 git clone https://github.com/aminK8/KnobGen.git
@@ -29,7 +25,9 @@ cd KnobGen
 conda env create -f environment.yml
 conda activate knobgen
 ```
-# Results
+
+Prepare the Dataset
+## Results
 
  Our method democratizes sketch-based image generation by effectively handling a broad spectrum of sketch complexity and user drawing ability—from novice sketches to those made by seasoned artists—while maintaining the natural appearance of the image.
 
