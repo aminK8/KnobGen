@@ -57,6 +57,7 @@ To run inference follow thes steps:
   </table>
 </p>
 
-### Our proposed Knob mechanism
-
-![KnobGen Spectrum](misc/knob_spectrum.png)
+<p align="center">
+  <img src="misc/knob_spectrum.png" alt="KnobGen Spectrum" width="600"><br>
+  <em>Our The effect of our <b>Knob<b> mechanism</em>
+</p>
