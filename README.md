@@ -15,11 +15,9 @@ KnobGen, a dual-pathway framework that democratizes sketch-based image generatio
 - [2024-09-27] 🔥 Initial release of KnobGen code!
 - [2024-10-02] 🔥 The paper is released on arXiv.
 
-
 ## Table of Contents
 Follow steps 1-3 to run our pipeline. 
-1. [Installation](#Installation)
-    - 
+1. [Installation](#Installation) 
 # Installation
 To set up the environment and start using KnobGen, please follow these steps:
 
