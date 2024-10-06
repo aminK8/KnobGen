@@ -61,3 +61,18 @@ To run inference follow thes steps:
   <img src="misc/henry_cavil.PNG" alt="KnobGen Spectrum" width="784"><br>
   <em> The effect of our <b>Knob</b> mechanism
 </p>
+
+
+## Citation
+If you liked our paper, please consider citing it
+```bibtex
+@misc{navardknobgen,
+      title={KnobGen: Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models}, 
+      author={Pouyan Navard and Amin Karimi Monsefi and Mengxi Zhou and Wei-Lun Chao and Alper Yilmaz and Rajiv Ramnath},
+      year={2024},
+      eprint={2410.01595},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.01595}, 
+}
+```
