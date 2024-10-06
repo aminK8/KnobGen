@@ -59,7 +59,7 @@ To run inference follow thes steps:
 
 <p align="center">
   <img src="misc/henry_cavil.PNG" alt="KnobGen Spectrum" width="784"><br>
-  <em> The effect of our <b>Knob</b> mechanism<em>
+  <em> The effect of our <b>Knob</b> mechanism</em>
 </p>
 
 
