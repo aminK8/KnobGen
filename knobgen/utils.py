@@ -3,7 +3,7 @@ import torch.distributed as dist
 import torch
 import importlib
 import numpy as np
-from conffusion import conditions
+from KnobGen import conditions
 import os
 
 
