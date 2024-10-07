@@ -1,6 +1,6 @@
 dataset: 
   train:
-    target: conffusion.data.MultiGen20M
+    target: KnobGen.data.MultiGen20M
     params:
       path_json: "base_url/json_files/aesthetics_plus_all_group_{}_all.json"
       path_meta: "base_url"
@@ -16,7 +16,7 @@ dataset:
   validation:
       num_inference_steps: 50
       guidance_scale: 8.
-      target: conffusion.data.MultiGen20M
+      target: KnobGen.data.MultiGen20M
       params:
         path_json: "small_dataset/json_files/aesthetics_plus_all_group_{}_all.json"
         path_meta: "small_dataset"
@@ -31,7 +31,7 @@ dataset:
             path: 'small_dataset/conditions/'
   test:
 model:
-  target: conffusion.models.VisionAdapterTransformer2
+  target: KnobGen.models.VisionAdapterTransformer2
   params:
     in_channels_image: 1024
     in_channels_text: 768
