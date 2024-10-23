@@ -34,8 +34,9 @@ conda activate knobgen
 We used MultiGen-20M Datasets, which were introduced by [UniControl](https://github.com/salesforce/UniControl).
 
 ## Train
-For train the model with T2I-adapter follow: `job_adapter_training.sh`
-For train the model with ControlNet follow: `job_controlnet_training.sh`
+To train the model using the T2I-Adapter, follow the instructions in the script: `job_adapter_training.sh`.
+
+To train the model using ControlNet, follow the instructions in the script: job_controlnet_training.sh.
 
 ## Inference
 To run inference follow thes steps:
