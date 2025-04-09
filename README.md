@@ -1,4 +1,7 @@
 # KnobGen
+
+* Official Implementation of KnobGen paper.
+
 ## Controlling the Sophistication of Artwork in Sketch-Based Diffusion Models
 
 KnobGen is a dual-pathway framework that empowers sketch-based image generation diffusion model by seamlessly adapting to varying levels of sketch complexity and user skill. KnobGen employs a Coarse-Grained Controller (CGC) module for leveraging high-level semantics from both textual and sketch inputs in the early stages of generation, and a Fine-Grained Controller (FGC) module for detailed refinement later in the process. 
